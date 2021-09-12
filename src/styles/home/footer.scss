@@ -1,0 +1,203 @@
+.talk{
+    background-color: $peach;
+    border-radius: 1rem;
+    display: grid;
+    margin: 4rem 7rem 0;
+    padding: 3rem 4rem ;
+    color:$white;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1;
+    background-image: url(../../assets/Home/bg-pattern-call-to-action.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: 7;
+    position: relative;
+     @media (max-width:1200px){
+         grid-template-columns: 100%;
+         grid-template-rows: 2;
+         text-align: center;
+         margin: 2rem 5rem;
+         padding: 2rem 2rem;
+         
+     }
+     @media (max-width:650px){
+         margin: 3rem 2rem 0;
+         padding: 1rem 1rem;
+     }
+     @media (max-width: 350px) {
+         margin: 3rem 2rem 0;
+         padding: .4rem 0rem;
+     }
+    h1{
+        width: 60%;
+        @media (max-width:1200px){
+            margin:1rem auto;
+            width: 70%;
+        }
+        @media (max-width:650px){
+            width: 100%;
+        }
+    }
+    p{
+        font-weight: 200;
+        @media (max-width:1200px){
+            margin: auto;
+            width: 70%;
+            @media (max-width:650px){
+                width: 90%;
+
+            }
+        }
+
+    }
+    .touch-button{
+        text-align: right;
+        padding: 5rem;
+         @media (max-width:1200px){
+             text-align: center;
+             padding: 2rem;
+
+         }
+
+    }
+
+}
+
+.footer{
+    background-color: $black;
+    margin-top: -4rem;
+    padding: 7rem 7rem ;
+    @media (max-width:1200px){
+         padding: 7rem 2rem ;
+    }
+}
+.nav-footer{
+    display:flex;
+    justify-content: space-between;
+    @media (max-width:710px){
+        display: block;
+    }
+}  
+.logo-footer{
+      @extend .logo;
+     @media (max-width:710px){
+        margin: 0.6rem 1rem ;
+        text-align: center;
+        justify-content: center;
+        img{
+            height: 40px;
+        }
+    }
+      @media (max-width:400px){
+         img{
+             margin: 0.6rem 0;
+            height: 24px ;
+         } 
+        }
+}
+.line-logo{
+    @media (min-width:710px){
+        display: none;
+    }
+    display: block;
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid $very-dark-grey;
+    width: 90%;
+    margin-top: 1.5rem;
+}
+.link-footer{
+    display:flex;
+    text-align:center;
+    overflow: hidden;
+    color:$white;
+     @media (max-width:710px){
+        display: block;
+        // flex-direction: column;
+    }
+    
+      li{
+        text-align:center;
+        list-style: none;
+        
+        cursor: pointer;
+        @media (max-width:710px){
+             margin: 2rem 1rem ;
+             margin-right: 3rem;
+        }
+     a{
+            margin: 0.6rem 1rem ;
+            text-decoration: none ;
+            color: $light-grey;
+            font-weight: 300;
+            font-size: .9rem;
+            letter-spacing: .1rem;
+            @media (max-width:710px){
+                font-size: 1.1rem;
+                font-weight: 400;
+        }
+    }
+        &:hover{
+            border-bottom: 1px solid transparent;
+            transition-duration: 1s;
+        }
+    }
+}
+.line{
+    display: block;
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid $very-dark-grey;
+    @media (max-width:710px){
+        display: none;
+    }
+}
+
+.contact-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1;
+    margin-top: 3rem ;
+    color:$very-dark-grey;
+     @media (max-width:710px){
+         grid-template-columns: 100%;
+         grid-template-rows: 3;
+         text-align: center;
+     }
+     .contactUs{
+        @media (max-width:710px){
+         margin-top: 2rem;
+     }
+     }
+    p{
+        font-weight: 900;
+    }
+    .icon{
+        padding-left: 9rem;
+        @media (max-width:1200px){
+            padding-left: 5rem;
+        }
+         @media (max-width:900px){
+            padding-left: 1rem;
+        }
+
+    }
+    span{
+        cursor:pointer;
+        margin: .3rem ;
+        a{
+            text-decoration: none;
+            color: $peach;
+            &:hover{
+            color: $peach-bg;
+        }
+        }
+
+    }
+    .social-icon{
+        margin-top: 6rem;
+         @media (max-width:710px){
+         margin-top: 1.5rem;
+     }
+    }
+}

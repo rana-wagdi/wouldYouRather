@@ -1,0 +1,221 @@
+%about-talent{
+     display:grid;
+     margin: 3rem 8rem ;
+     border-radius: 1rem;
+     overflow: hidden;
+      @media (max-width:1200px){
+             margin: 3rem 4rem ;
+        }
+}
+
+
+
+.about{
+    @extend %about-talent;
+    grid-template-columns: 60% 40%;
+    background-color: $peach;
+    height: 30rem;
+    @media (max-width:900px){
+        grid-template-columns: auto ;
+        grid-template-rows: repeat(2, 1fr);
+        height: auto;
+    }
+    @media (max-width: 700px) {
+        margin: 3rem 0 ;
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+    .about-us{
+        padding: 6rem;
+        color:$peach-bg;
+        background-image: url('../../assets/pages/ourcompany/bg-pattern-hero-about-desktop.svg');
+       @extend %back_img;
+        line-height: 1.8rem ;
+        @media (max-width:1200px){
+            padding: 3rem ;
+        }
+         @media (max-width:900px){
+            text-align: center;
+        }
+          @media (max-width:700px){
+            padding: 1rem ;
+        }
+    }
+    h1{
+        font-size: 3rem;
+        font-weight: 500 ;
+        margin-bottom: 3rem;
+    }
+    .about-img{
+        background-image: url(../../assets/pages/ourcompany/image-about-hero.jpg);
+        @extend %back_img;
+        @media (max-width:900px){
+            width: 100%;
+            background-image: url(../../assets/pages/ourcompany/image-about-heroo.jpg);
+            text-align: center;
+            grid-row: 1 ;
+     } 
+     @media (max-width:900px){
+          background-image: url(../../assets/pages/ourcompany/image-about-hero-mb.jpg);
+     }
+
+    }
+}
+
+
+
+/////////// talent///////////
+
+.talent{
+    @extend %about-talent;
+    background-color: $peach-bg;
+    grid-template-columns: 42% 58% ;
+    height: 40rem ;
+    margin-top: 8rem;
+     @media (max-width:900px){
+        grid-template-columns: auto ;
+        grid-template-rows: repeat(2, 1fr);
+        height: auto;
+    }
+    @media (max-width:700px){
+       margin: 0;
+       border-radius: 0;
+    }
+}
+.img-talent{
+      background-image: url(../../assets/pages/ourcompany/image-world-class-talent.jpg);
+      @extend %back_img;
+  @media (max-width:900px){
+            width: 100%;
+            background-image: url(../../assets/pages/ourcompany/image-world-class-talent-tm.jpg);
+     } 
+
+       @media (max-width:600px){
+             background-image: url(../../assets/pages/ourcompany/image-world-class-talent-mb.jpg);
+             object-fit: cover;
+        }
+ }
+ .world-talent{
+     padding: 8rem 5rem ;
+     background-image: url(../../assets/pages/ourcompany/bg-pattern-three-circles.svg);
+     background-repeat: no-repeat;
+     background-position: left;
+     @media (max-width:1200px){
+       padding: 7rem 3rem;
+    }
+    @media (max-width:900px){
+       padding: 8rem 5rem ;
+        background-position: center ;
+        text-align: center;
+    }
+     @media (max-width:600px){
+       padding: 5rem 1rem ;
+    }
+
+    h1{
+        color: $peach;
+        font-size: 2.5rem ;
+    }
+    p{
+        font-weight: 400 ;
+        line-height: 1.6rem;
+    }
+    .talent-team{
+        margin-top: 1rem;
+    }
+ }
+
+
+//  Deal//////
+
+.deal{
+    margin: 5rem 3rem;
+    text-align:center;
+    .deal-location{
+        display: grid;
+        padding: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1;
+        @media (max-width:900px){
+        grid-template-columns: auto ;
+        grid-template-rows: repeat(3, 1fr);
+        height: auto;
+    }
+    }
+    h2{
+        font-weight: 300;
+        letter-spacing: .1rem ;
+    }
+    .deal-country{
+        margin: 2rem auto;
+    }
+
+    img{
+        background: url(../../assets/Home/bg-pattern-small-circle.svg);
+        background-position: center
+    }
+    button{
+        background-color: $peach;
+        padding: .8rem 1.5rem;
+        color: $white;
+        border: none;
+        border-radius: .5rem;
+        font-size: 1rem;
+        letter-spacing: .1rem;
+        font-weight: 500;
+        cursor: pointer;
+        &:hover{
+            background-color: $light-peach;
+        }
+    }
+}
+
+.deal-section{
+    @extend .about;
+    grid-template-columns: 55% 45% ;
+    margin: 7rem 2rem ;
+    background-color: $peach-bg ;
+    height: 40rem;
+     @media (max-width:900px){
+        grid-template-columns: auto ;
+        grid-template-rows: repeat(2, 1fr);
+        height: auto;
+    }
+     @media (max-width: 700px) {
+        margin:0rem ;
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+    .deal-text{
+        text-align: left;
+        padding: 6rem ;
+        background-image: url(../../assets/pages/ourcompany/bg-pattern-two-circles.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+         @media (max-width:1200px){
+            padding: 6rem 3rem ;
+         }
+         @media (max-width:900px){
+            padding: 2rem 3rem ;
+            text-align: center;
+         }
+    }
+    h1{
+        color:$peach ;
+    }
+    p{
+        font-weight: 400;
+        margin-bottom: 2rem;
+    }
+    .deal-img{
+        @extend .about-us;
+        background-image: url(../../assets/pages/ourcompany/image-real-deal.jpg);
+        @media (max-width:900px){
+            // width: 100%;
+            background-image: url(../../assets/pages/ourcompany/image-real-deal-t-m.jpg);
+            background-size: cover;
+            object-fit: cover;
+            grid-row: 1 ;
+     } 
+    }
+}
